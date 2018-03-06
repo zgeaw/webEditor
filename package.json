@@ -1,8 +1,8 @@
 {
-  "name": "webEditor",
-  "title": "webEditor",
+  "name": "webEditor2",
+  "title": "webEditor2",
   "version": "1.0.0",
-  "description": "webEditor - 基于javascript和css开发的 web 富文本编辑器， 轻量、简洁、易用、开源免费",
+  "description": "webEditor2 - 基于javascript和css开发的 web 富文本编辑器， 轻量、简洁、易用、开源免费",
   "author": {
     "name": "gengweigang",
     "url": "https://github.com/zgeaw"
