@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>wangEditor demo list</title>
+    <style type="text/css">
+        .body {
+            width: 800px;
+            margin: 0 auto 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div id="div1">
+            <p>请输入...</p>
+        </div>
+    </div>
+
+    <!-- 引用js -->
+    <script type="text/javascript" src="/wangEditor.js"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#div1')		
+        editor.customConfig.menus = [
+          'emoticon',
+          'image',
+          'comlanguage'
+        ]
+        //editor.customConfig.showLinkImg = false
+        editor.customConfig.comLanguageTions = {}
+        editor.customConfig.comLanguageTions.content = ['你好!', '谢谢!']
+        editor.create()
+    </script>
+</body>
+</html>
