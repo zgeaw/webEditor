@@ -8,8 +8,8 @@
 
 ## 下载
 
-- 使用`npm`下载：`npm install webEditor` （注意 `wangeditor` 全部是**小写字母**）
-- 使用`bower`下载：`bower install webEditor` （前提保证电脑已安装了`bower`）
+- 使用`npm`下载：`npm install webeditor2`
+- 使用`bower`下载：`bower install webeditor2`
 
 
 ## 使用
