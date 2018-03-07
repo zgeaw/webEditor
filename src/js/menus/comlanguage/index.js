@@ -9,7 +9,7 @@ function Comlanguage(editor) {
     this.editor = editor
     this.$elem = $(
         `<div class="w-e-menu">
-            <img src="/images/language.png" class="cursor">
+            <img src="/static/language.png" class="cursor">
         </div>`
     )
     this.type = 'panel'

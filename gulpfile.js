@@ -15,7 +15,6 @@ const cssgrace = require('cssgrace')
 const resolve = require('rollup-plugin-node-resolve')
 const babel = require('rollup-plugin-babel')
 const gulpReplace = require('gulp-replace')
-const imageMin = require('gulp-imagemin') 
 
 // 拷贝 fonts 文件
 gulp.task('copy-fonts', () => {
@@ -23,17 +22,12 @@ gulp.task('copy-fonts', () => {
         .pipe(gulp.dest('./release/fonts'))
 })
 
-gulp.task('copy-images', () => {
-    gulp.src('./src/images/*')
-        .pipe(gulp.dest('./release/images'))
-})
-
 // 处理 css
 gulp.task('css', () => {
     gulp.src('./src/less/**/*.less')
         .pipe(less())
         // 产出的未压缩的文件名
-        .pipe(concat('wangEditor.css'))
+        .pipe(concat('webEditor.css'))
         // 配置 postcss
         .pipe(postcss([
             autoprefixer,
@@ -55,7 +49,7 @@ gulp.task('css', () => {
         // 产出文件的位置
         .pipe(gulp.dest('./release'))
         // 产出的压缩后的文件名
-        .pipe(rename('wangEditor.min.css'))
+        .pipe(rename('webEditor.min.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('./release'))
 })
@@ -79,16 +73,16 @@ gulp.task('script', () => {
             // 产出文件使用 umd 规范（即兼容 amd cjs 和 iife）
             format: 'umd',
             // iife 规范下的全局变量名称
-            moduleName: 'wangEditor',
+            moduleName: 'webEditor',
             // 产出的未压缩的文件名
-            dest: './release/wangEditor.js'
+            dest: './release/webEditor.js'
         }).then(() => {
             // 待 rollup 打包 js 完毕之后，再进行如下的处理：
-            gulp.src('./release/wangEditor.js')
+            gulp.src('./release/webEditor.js')
                 // inline css
                 .pipe(gulpReplace(/__INLINE_CSS__/gm, function () {
                     // 读取 css 文件内容
-                    var filePath = path.resolve(__dirname, 'release', 'wangEditor.css')
+                    var filePath = path.resolve(__dirname, 'release', 'webEditor.css')
                     var content = fs.readFileSync(filePath).toString('utf-8')
                     // 替换 \n \ ' 三个字符
                     content = content.replace(/\n/g, '').replace(/\\/g, '\\\\').replace(/'/g, '\\\'')
@@ -99,7 +93,7 @@ gulp.task('script', () => {
                 // 压缩
                 .pipe(uglify())
                 // 产出的压缩的文件名
-                .pipe(rename('wangEditor.min.js'))
+                .pipe(rename('webEditor.min.js'))
                 // 生成 sourcemap
                 .pipe(sourcemaps.write(''))
                 .pipe(gulp.dest('./release'))
@@ -110,7 +104,7 @@ gulp.task('script', () => {
 
 // 默认任务配置
 gulp.task('default', () => {
-    gulp.run('copy-fonts', 'copy-images', 'css', 'script')
+    gulp.run('copy-fonts', 'css', 'script')
 
     // 监听 js 原始文件的变化
     gulp.watch('./src/js/**/*.js', () => {

@@ -22,7 +22,7 @@ function Editor(toolbarSelector, textSelector) {
         throw new Error('错误：初始化编辑器时候未传入任何参数，请查阅文档')
     }
     // id，用以区分单个页面不同的编辑器对象
-    this.id = 'wangEditor-' + editorId++
+    this.id = 'webEditor-' + editorId++
 
     this.toolbarSelector = toolbarSelector
     this.textSelector = textSelector
@@ -80,11 +80,8 @@ Editor.prototype = {
             $toolbarSelector.append($toolbarElem).append($textContainerElem)
 
             // 自行创建的，需要配置默认的样式
-            $toolbarElem.css('background-color', '#f1f1f1')
-                            .css('border', '1px solid #ccc')
-            $textContainerElem.css('border', '1px solid #ccc')
-                            .css('border-top', 'none')
-                            .css('height', '300px')
+            //$toolbarElem.css('background-color', '#f1f1f1').css('border', '1px solid #ccc')
+            //$textContainerElem.css('border', '1px solid #ccc').css('border-top', 'none').css('height', '300px')
         } else {
             // toolbar 和 text 的选择器都有值，记录属性
             $toolbarElem = $toolbarSelector

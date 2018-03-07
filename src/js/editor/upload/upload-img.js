@@ -22,7 +22,7 @@ UploadImg.prototype = {
         const customAlert = editor.config.customAlert
 
         if (debug) {
-            throw new Error('wangEditor: ' + (debugInfo || alertInfo))
+            throw new Error('webEditor: ' + (debugInfo || alertInfo))
         } else {
             if (customAlert && typeof customAlert === 'function') {
                 customAlert(alertInfo)
@@ -67,7 +67,7 @@ UploadImg.prototype = {
         img.onerror = () => {
             img = null
             // 无法成功下载图片
-            this._alert('插入图片错误', `wangEditor: 插入图片出错，图片链接是 "${link}"，下载该链接失败`)
+            this._alert('插入图片错误', `webEditor: 插入图片出错，图片链接是 "${link}"，下载该链接失败`)
             return
         }
         img.onabort = () => {

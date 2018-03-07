@@ -9,7 +9,7 @@ function Emoticon(editor) {
     this.editor = editor
     this.$elem = $(
         `<div class="w-e-menu">
-            <img src="/images/face.png" class="cursor">
+            <img src="/static/face.png" class="cursor">
         </div>`
     )
     this.type = 'panel'

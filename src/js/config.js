@@ -6,7 +6,7 @@ const Face = function() {
   for(var i = 0; i < 100; i++){
     var faceItem = {
       alt: '',
-      src: '/images/qqface/' + (i+1) + '.png'
+      src: '/static/qqface/' + (i+1) + '.png'
     }
     _html.push(faceItem)
   }

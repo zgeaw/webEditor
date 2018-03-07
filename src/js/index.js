@@ -21,4 +21,4 @@ style.innerHTML= inlinecss
 document.getElementsByTagName('HEAD').item(0).appendChild(style)
 
 // 返回
-export default (window.wangEditor || Editor)
+export default (window.webEditor || Editor)

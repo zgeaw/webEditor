@@ -9,7 +9,7 @@ import Panel from '../panel.js'
 function Image(editor) {
     this.editor = editor
     const imgMenuId = getRandom('w-e-img')
-    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="/images/image.png" class="cursor"></div>')
+    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="/static/image.png" class="cursor"></div>')
     editor.imgMenuId = imgMenuId
     this.type = 'panel'
 

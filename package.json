@@ -11,7 +11,7 @@
     "webEditor",
     "web 富文本编辑器"
   ],
-  "main": "release/wangEditor.js",
+  "main": "release/webEditor.js",
   "maintainers": [
     {
       "name": "gengweigang",
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "release": "gulp",
-    "win-example": "node ./example/server/index.js",
+    "dev": "node ./example/server/index.js",
     "example": "/bin/rm -rf ./example/upload-files && mkdir ./example/upload-files && npm run win-example"
   },
   "devDependencies": {
@@ -44,7 +44,6 @@
     "gulp-replace": "^0.5.4",
     "gulp-sourcemaps": "^2.5.0",
     "gulp-uglify": "^2.1.2",
-	"gulp-imagemin": "^3.2.0",
     "koa": "^1.2.4",
     "koa-bodyparser": "^2.3.0",
     "koa-onerror": "^3.1.0",

@@ -15,7 +15,7 @@
 ## 使用
 
 ```javascript
-var E = window.wangEditor
+var E = window.webEditor
 var editor = new E('#div1')
 editor.create()
 ```
@@ -24,6 +24,6 @@ editor.create()
 ## 运行 demo
 
 - 安装或者升级最新版本 node（最低`v6.x.x`）
-- 进入目录，安装依赖包 `cd wangEditor && npm i`
-- 安装包完成之后，windows 用户运行`npm run win-example`，Mac 用户运行`npm run example`
+- 进入目录，安装依赖包 `cd webEditor && npm i`
+- 安装包完成之后，windows 用户运行`npm run dev`，Mac 用户运行`npm run example`
 - 打开浏览器访问[localhost:3000/index.html](http://localhost:3000/index.html)
