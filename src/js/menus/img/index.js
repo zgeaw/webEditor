@@ -10,7 +10,7 @@ import imageUrl from '../../imageConfig.js'
 function Image(editor) {
     this.editor = editor
     const imgMenuId = getRandom('w-e-img')
-    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="'+ imageUrl +'/static/image.png" class="cursor"></div>')
+    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="'+ imageUrl +'/image.png" class="cursor"></div>')
     editor.imgMenuId = imgMenuId
     this.type = 'panel'
 
