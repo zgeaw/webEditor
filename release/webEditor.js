@@ -538,6 +538,12 @@ $.offAll = function () {
     });
 };
 
+/**
+ * Created by 32237384@qq.com on 2018/03/23.
+ */
+
+var imageUrl = 'http://172.16.0.145:10000/qqface';
+
 /*
     配置信息
 */
@@ -546,7 +552,7 @@ var Face = function Face() {
     for (var i = 0; i < 100; i++) {
         var faceItem = {
             alt: '',
-            src: '/static/qqface/' + (i + 1) + '.png'
+            src: imageUrl + '/' + (i + 1) + '.png'
         };
         _html.push(faceItem);
     }
@@ -2019,7 +2025,7 @@ Code.prototype = {
 // 构造函数
 function Emoticon(editor) {
     this.editor = editor;
-    this.$elem = $('<div class="w-e-menu">\n            <img src="/static/face.png" class="cursor">\n        </div>');
+    this.$elem = $('<div class="w-e-menu">\n            <img src="' + imageUrl + '/face.png" class="cursor">\n        </div>');
     this.type = 'panel';
 
     // 当前是否 active 状态
@@ -2545,7 +2551,7 @@ Video.prototype = {
 function Image(editor) {
     this.editor = editor;
     var imgMenuId = getRandom('w-e-img');
-    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="/static/image.png" class="cursor"></div>');
+    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="' + imageUrl + '/static/image.png" class="cursor"></div>');
     editor.imgMenuId = imgMenuId;
     this.type = 'panel';
 
@@ -2755,7 +2761,7 @@ Image.prototype = {
 // 构造函数
 function Comlanguage(editor) {
   this.editor = editor;
-  this.$elem = $('<div class="w-e-menu">\n            <img src="/static/language.png" class="cursor">\n        </div>');
+  this.$elem = $('<div class="w-e-menu">\n            <img src="' + imageUrl + '/language.png" class="cursor">\n        </div>');
   this.type = 'panel';
 
   // 当前是否 active 状态

@@ -3,13 +3,14 @@
 */
 import $ from '../../util/dom-core.js'
 import Panel from '../panel.js'
+import imageUrl from '../../imageConfig.js'
 
 // 构造函数
 function Emoticon(editor) {
     this.editor = editor
     this.$elem = $(
         `<div class="w-e-menu">
-            <img src="/static/face.png" class="cursor">
+            <img src="`+ imageUrl +`/face.png" class="cursor">
         </div>`
     )
     this.type = 'panel'

@@ -4,12 +4,13 @@
 import $ from '../../util/dom-core.js'
 import { getRandom, arrForEach } from '../../util/util.js'
 import Panel from '../panel.js'
+import imageUrl from '../../imageConfig.js'
 
 // 构造函数
 function Image(editor) {
     this.editor = editor
     const imgMenuId = getRandom('w-e-img')
-    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="/static/image.png" class="cursor"></div>')
+    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="'+ imageUrl +'/static/image.png" class="cursor"></div>')
     editor.imgMenuId = imgMenuId
     this.type = 'panel'
 

@@ -1,12 +1,13 @@
 /*
     配置信息
 */
+import imageUrl from './imageConfig.js'
 const Face = function() {
   var _html = []
   for(var i = 0; i < 100; i++){
     var faceItem = {
       alt: '',
-      src: '/static/qqface/' + (i+1) + '.png'
+      src: imageUrl + '/' + (i+1) + '.png'
     }
     _html.push(faceItem)
   }

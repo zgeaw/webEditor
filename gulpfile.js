@@ -16,6 +16,17 @@ const resolve = require('rollup-plugin-node-resolve')
 const babel = require('rollup-plugin-babel')
 const gulpReplace = require('gulp-replace')
 
+var base64 = require('gulp-all-base64');
+//var base64 = require('gulp-base64');
+//var config = require('./base64').base64;
+
+gulp.task('base64', () => {
+    gulp.src('./src/js/*.js')
+        .pipe(base64({baseDir: 'src', fileType: 'html', rule: '/static\/\w+\-\w+.png/g/'}))
+        .pipe(gulp.dest('./release'))
+    //return gulp.src(config.src).pipe(base64(config.options)).pipe(gulp.dest(config.dest));
+})
+
 // 拷贝 fonts 文件
 gulp.task('copy-fonts', () => {
     gulp.src('./src/fonts/*')
@@ -34,7 +45,7 @@ gulp.task('css', () => {
             cssgrace
         ]))
         // 将 css 引用的字体文件转换为 base64 格式
-        .pipe(gulpReplace( /'fonts\/w-e-icon\..+?'/gm, function (fontFile) {
+        .pipe(gulpReplace(/'fonts\/w-e-icon\..+?'/gm, function (fontFile) {
             // fontFile 例如 'fonts/w-e-icon.eot?paxlku'
             fontFile = fontFile.slice(0, -1).slice(1)
             fontFile = fontFile.split('?')[0]
@@ -79,7 +90,7 @@ gulp.task('script', () => {
         }).then(() => {
             // 待 rollup 打包 js 完毕之后，再进行如下的处理：
             gulp.src('./release/webEditor.js')
-                // inline css
+            // inline css
                 .pipe(gulpReplace(/__INLINE_CSS__/gm, function () {
                     // 读取 css 文件内容
                     var filePath = path.resolve(__dirname, 'release', 'webEditor.css')
@@ -117,7 +128,7 @@ gulp.task('default', () => {
     // 监听 icon.less 的变化，变化时重新拷贝 fonts 文件
     gulp.watch('./src/less/icon.less', () => {
         gulp.run('copy-fonts')
-    })	
+    })
 })
 
 
