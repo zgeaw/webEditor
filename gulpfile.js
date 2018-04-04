@@ -16,17 +16,6 @@ const resolve = require('rollup-plugin-node-resolve')
 const babel = require('rollup-plugin-babel')
 const gulpReplace = require('gulp-replace')
 
-var base64 = require('gulp-all-base64');
-//var base64 = require('gulp-base64');
-//var config = require('./base64').base64;
-
-gulp.task('base64', () => {
-    gulp.src('./src/js/*.js')
-        .pipe(base64({baseDir: 'src', fileType: 'html', rule: '/static\/\w+\-\w+.png/g/'}))
-        .pipe(gulp.dest('./release'))
-    //return gulp.src(config.src).pipe(base64(config.options)).pipe(gulp.dest(config.dest));
-})
-
 // 拷贝 fonts 文件
 gulp.task('copy-fonts', () => {
     gulp.src('./src/fonts/*')

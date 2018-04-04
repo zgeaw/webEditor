@@ -4,13 +4,12 @@
 import $ from '../../util/dom-core.js'
 import { getRandom, arrForEach } from '../../util/util.js'
 import Panel from '../panel.js'
-import imageUrl from '../../imageConfig.js'
 
 // 构造函数
 function Image(editor) {
     this.editor = editor
     const imgMenuId = getRandom('w-e-img')
-    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="'+ imageUrl +'/image.png" class="cursor"></div>')
+    this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAAAXNSR0IArs4c6QAAAqVJREFUOBGdlU9oknEYx33f1EQUW9Cxk3prRKfWqRgUjA6y02L+YRIlQQjF2iIPG4xYIwYdMpCGgn8arT+HXcLTKFzRJQgGXcS7kRRIs/nv7fOIr5h6eO2BH8//7/P8nt/jq2IaoEQiYRkwjaVGIpEmCZqepIiwurpqdbvdy6qq+jRNO94fgNyJkTiDVFcUZbdSqTyKRqNHZkkC/CHGq4DHOD/a7fYR5mNQE91GYcNFyD1J7trExIQLfleJx+MOl8t1gOIPBAL7cFMmk7kF6Czge9jWxTYOpdPp8+TvkDOpOp1OO92DpZUFJJfL+dDlJq/gC1JsHPBu7Hd4q9Fo2NVmU6agaVxN7TonAT6g8+foH5DPde2GmY4l2J036M9stVpvmP31bDb7HruH4Ll+v8iyaXa7/Qp9qaVSKc+S1AdjdF3vWtdNoVDoG6CX6TxHBzPohZ4TATCzw+HYxr/JnDe8Xu9r2cL+mH556AbiDAaDRZicIQJQ3ucM852ikZbNZivIFhJ4bygYw8gCEshj3wRolk6/MrY1bvKb7ZjGdQf7dDgc/iVx2K4x0gLxn/x+/1ux9dPQiMTJ/O/DVjh5zhSjyAOwCM8B/oAbfsHeoe5Ib6Mk2DhP19xjQwUAn8e7TNc+NulJuVyeQd8D+BI8hu0Z/B+i4Db+l9z2hbwHcksPUJLJ5Cmr1fq5Xq9ftFgspwl6RwA5wV09yAhPpVI28mWtP/I2G/D9Wq12QTWbzchKkyJn4TuAx8YFlwZ4kz/kznPmwLmBqbO6arVaPZQAjFs4twB/Kvr/ELlFul8gd4kj37DDzkeMua9TYBGnnyJlZMMftxGNnAA4Kc3yXkudNS0Wiysej+enFOHYRiQZNpF/BPhjMDclaahT+aUaRhsRSL784fToL8bsPTyrzQDWAAAAAElFTkSuQmCC" class="menu-image"></div>')
     editor.imgMenuId = imgMenuId
     this.type = 'panel'
 

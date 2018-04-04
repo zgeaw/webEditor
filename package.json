@@ -1,7 +1,7 @@
 {
   "name": "webeditor2",
   "title": "webeditor2",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "webEditor2 - 基于javascript和css开发的 web 富文本编辑器， 轻量、简洁、易用、开源免费",
   "author": {
     "name": "gengweigang",
@@ -36,6 +36,7 @@
     "cssgrace": "^3.0.0",
     "formidable": "^1.1.1",
     "gulp": "^3.9.1",
+    "gulp-base64": "^0.1.2",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-less": "^3.3.0",

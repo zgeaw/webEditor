@@ -3,14 +3,13 @@
 */
 import $ from '../../util/dom-core.js'
 import Panel from '../panel.js'
-import imageUrl from '../../imageConfig.js'
 
 // 构造函数
 function Comlanguage(editor) {
     this.editor = editor
     this.$elem = $(
         `<div class="w-e-menu">
-            <img src="`+ imageUrl +`/language.png" class="cursor">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAvZJREFUOBGNlF1Ik2EUx9327iMhiSlYUNmmBH2DFl14E1aXURAEOafpFMPRCIOKuhGiuzKbRRnoyE0U6iropos+rkuIvpBcKrnSXUyXDea2tvU7Y+/QZm4PnPe8zzn/83/+z/Oc99WU/Gf09vZuqKysPJROp49oNJqLwNKpVKpPq9W+CQaDb7u7u6NrlWr+DXo8HpNerz9P3AmRGT+NTQkO8mpiFnwIu7e4uPjQ5XLFJKeOVYQjIyNWEj7A2ym8jX/S1NQUUMHih4aGthkMhjO8XsKmUG1vbm6WRTMjR4iyHQBfQfI5Go06Ojo6gipoLe/1erewfQ/4nYlEoqG1tXVGcFp5uN1uI9scI/nV7/efKkQmNXa7fS4SiZxgJ9+oHRUOiSvyKC8v78RVA9hltVrrfD5fP3Od5NYZSbbbFYvFGo1G44TZbG4He1+Tvc0vTNw2m+1O9oxOozajvgDh05aWlh8IuIzSzng8vkepqKioo3gTNibFbW1ts7i+dYjyUhCNcv7XFUWpVWA+hvm5zTlBDg4ObiS5r5BCalJLS0sfnE5nBBEBOmSGmnqFm3Lx8kJd1mQyHWbuJa7Dp9X4Sg+ZhlSyrKzsLPHXmECnCZ+TS/mD5dpncnLypcVi2bu8vJyLkc8bOp0uFQgEwmoCMq0sonBT/ag5qSZ6enpSvIfUeZFeFMsX5NFwQ/WwP0fRbofD8ZOGPcACVyEq2DbJZPImX8knzq8Kso+IO67Q5eNcQoiza4TkFuQJkr94L9g2EMpxlUBkQ8R8OBx+nzknVHZBdEP6iE9oXkDFjqy6ceqv0cePMioWFhYGUTXBJ+STRi+WTHDUHcVFQ6HQY5lnCOUXhGxpgSr+gc9QvFWSxQyUyS5/wxEXfO6cONzvbLmBFaXZ37GVK8PDwxYwmWMR8FoDIQniWrojg8sDDwwM6EtLS9shvYBtZoEAfha/6ke6gtxCXk//7peWyyNUgSQNNTU1tRAdzPaphZz06KpBPoXd5Xf2QBJ/AfO0eotAz5lPAAAAAElFTkSuQmCC" class="menu-comlang">
         </div>`
     )
     this.type = 'panel'
