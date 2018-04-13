@@ -56,7 +56,7 @@ Emoticon.prototype = {
                     const alt = item.alt
                     if (src) {
                         // 加一个 data-w-e 属性，点击图片的时候不再提示编辑图片
-                        faceHtml += '<span class="w-e-item"><img src="' + src + '" alt="' + alt + '" title="' + alt + '" data-w-e="1"/></span>'
+                        faceHtml += '<span class="w-e-item"><img class="custom-face" src="' + src + '" alt="' + alt + '" title="' + alt + '" data-w-e="1"/></span>'
                     }
                 })
             }

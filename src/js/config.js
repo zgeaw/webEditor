@@ -186,7 +186,7 @@ const Face = function () {
      }
      ]*/
     let _html = []
-    for(var i = 0; i < 100; i++){
+    for(var i = 0; i < 51; i++){
      var faceItem = {
      alt: '',
      src: imageUrl + '/' + (i+1) + '.gif'

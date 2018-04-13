@@ -470,6 +470,10 @@
   *zoom: 1;
   cursor: pointer;
 }
+.w-e-toolbar .w-e-panel-container .w-e-emoticon-container .w-e-item img {
+  width: 32px;
+  height: 32px;
+}
 .w-e-toolbar .w-e-panel-container .w-e-language .w-e-language-li {
   cursor: pointer;
   padding: 8px 0;
@@ -521,4 +525,8 @@
 }
 .w-e-text p {
   margin: 0;
+}
+.w-e-text .custom-face {
+  width: 32px;
+  height: 32px;
 }
