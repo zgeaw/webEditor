@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71fcfd1e-c51f-4229-8423-628b0017bbb1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/release/webEditor.css" afterPath="$PROJECT_DIR$/release/webEditor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/release/webEditor.js" afterPath="$PROJECT_DIR$/release/webEditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/release/webEditor.min.css" afterPath="$PROJECT_DIR$/release/webEditor.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/release/webEditor.min.js" afterPath="$PROJECT_DIR$/release/webEditor.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/release/webEditor.min.js.map" afterPath="$PROJECT_DIR$/release/webEditor.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/config.js" afterPath="$PROJECT_DIR$/src/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/imageConfig.js" afterPath="$PROJECT_DIR$/src/js/imageConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/menus/comlanguage/index.js" afterPath="$PROJECT_DIR$/src/js/menus/comlanguage/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/menus/emoticon/index.js" afterPath="$PROJECT_DIR$/src/js/menus/emoticon/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/menus/img/index.js" afterPath="$PROJECT_DIR$/src/js/menus/img/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/text.less" afterPath="$PROJECT_DIR$/src/less/text.less" />
-    </list>
+    <list default="true" id="71fcfd1e-c51f-4229-8423-628b0017bbb1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -525,12 +510,12 @@
       <workItem from="1522129109981" duration="217000" />
       <workItem from="1522232516425" duration="449000" />
       <workItem from="1522233648493" duration="624000" />
-      <workItem from="1522813774178" duration="9455000" />
+      <workItem from="1522813774178" duration="9607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17036000" />
+    <option name="totallyTimeSpent" value="17188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
