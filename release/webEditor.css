@@ -181,6 +181,11 @@
 .w-e-toolbar .w-e-menu:hover i {
   color: #333;
 }
+.w-e-toolbar .w-e-menu .menu-face,
+.w-e-toolbar .w-e-menu .menu-image,
+.w-e-toolbar .w-e-menu .menu-comlang {
+  height: 20px;
+}
 .w-e-toolbar .w-e-active i {
   color: #1e88e5;
 }
